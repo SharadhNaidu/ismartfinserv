@@ -17,7 +17,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.35 }}
               className="flex items-center gap-3 mb-6"
             >
               <div className="w-10 h-10 flex items-center justify-center">
@@ -31,7 +31,7 @@ export default function Hero() {
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+              transition={{ duration: 0.35, delay: 0.05 }}
               className="text-6xl sm:text-7xl lg:text-8xl xl:text-[5.5rem] 2xl:text-[6rem] font-semibold leading-[1.02] mb-6 max-w-none"
             >
               {t('heroTitle')}
@@ -40,7 +40,7 @@ export default function Hero() {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.35, delay: 0.1 }}
               className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-xl"
             >
               {t('heroSubtitle')}
@@ -49,7 +49,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+              transition={{ duration: 0.35, delay: 0.15 }}
               className="flex flex-col sm:flex-row gap-4"
             >
               <motion.a
@@ -75,7 +75,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.35, delay: 0.2 }}
               className="mt-10 grid grid-cols-2 gap-6"
             >
               {[
@@ -127,17 +127,17 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
+        transition={{ delay: 0.6 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <motion.div
           animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
+          transition={{ duration: 1.2, repeat: Infinity }}
           className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            transition={{ duration: 1.2, repeat: Infinity }}
             className="w-1.5 h-3 bg-white/50 rounded-full"
           />
         </motion.div>

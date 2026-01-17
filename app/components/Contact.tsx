@@ -84,7 +84,7 @@ export default function Contact() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.35 }}
           className="text-center mb-16"
         >
           <motion.span
@@ -108,7 +108,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.35, delay: 0.1 }}
             className="space-y-6"
           >
             {contactInfo.map((info, index) => {
@@ -118,7 +118,7 @@ export default function Contact() {
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                  transition={{ duration: 0.3, delay: 0.15 + index * 0.05 }}
                   className="flex gap-5 p-6 bg-white rounded-2xl hover:shadow-md transition-all duration-300 border border-gray-200"
                 >
                   <div className="w-14 h-14 bg-slate-50 border border-gray-200 rounded-2xl flex items-center justify-center flex-shrink-0">
@@ -139,7 +139,7 @@ export default function Contact() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.35, delay: 0.1 }}
           >
             <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('sendMessage')}</h3>
@@ -241,7 +241,7 @@ export default function Contact() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
+          transition={{ duration: 0.35, delay: 0.2 }}
           className="mt-16"
         >
           <div className="text-center mb-8">

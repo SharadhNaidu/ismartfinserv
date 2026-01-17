@@ -24,7 +24,7 @@ export default function About() {
             ref={ref}
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             className="relative"
           >
             <div className="bg-white border border-gray-200 rounded-2xl p-10 shadow-sm">
@@ -48,7 +48,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
             <motion.span
               initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export default function About() {
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                    transition={{ duration: 0.3, delay: 0.2 + index * 0.05 }}
                     className="text-center bg-white border border-gray-200 rounded-xl p-4"
                   >
                     <div className="w-12 h-12 mx-auto mb-3 bg-slate-50 border border-gray-200 rounded-xl flex items-center justify-center">

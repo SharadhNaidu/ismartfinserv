@@ -17,13 +17,13 @@ export default function Certificate() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.35 }}
           className="text-center mb-12"
         >
           <motion.span
             initial={{ opacity: 0, scale: 0.5 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
             className="inline-block px-4 py-2 bg-slate-100 text-slate-700 rounded-full text-sm font-semibold mb-4"
           >
             {t('navCertificate')}
@@ -41,7 +41,7 @@ export default function Certificate() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.35, delay: 0.1 }}
           className="flex flex-wrap justify-center gap-4 mb-12"
         >
           {[
@@ -66,7 +66,7 @@ export default function Certificate() {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.35, delay: 0.15 }}
           className="relative"
         >
           <div className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200">

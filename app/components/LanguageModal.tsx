@@ -29,7 +29,7 @@ export default function LanguageModal() {
         <motion.div
           initial={{ scale: 0.95, y: 20, opacity: 0 }}
           animate={{ scale: 1, y: 0, opacity: 1 }}
-          transition={{ type: 'spring', duration: 0.6, bounce: 0.2 }}
+          transition={{ type: 'spring', duration: 0.35, bounce: 0.2 }}
           className="relative bg-white rounded-2xl shadow-xl p-8 md:p-10 max-w-lg w-[92%] mx-4 border border-gray-200"
         >
           {/* Logo & Header */}
@@ -40,7 +40,7 @@ export default function LanguageModal() {
             <motion.h2
               initial={{ y: 12, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.1 }}
               className="text-2xl md:text-3xl font-semibold text-gray-900 mb-2"
             >
               {t('selectLanguage')}
@@ -48,7 +48,7 @@ export default function LanguageModal() {
             <motion.p
               initial={{ y: 12, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.15 }}
               className="text-gray-500 text-base"
             >
               {t('languageSubtitle')}
@@ -62,7 +62,7 @@ export default function LanguageModal() {
                 key={lang.code}
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.5 + index * 0.1, type: 'spring', bounce: 0.4 }}
+                transition={{ delay: 0.25 + index * 0.05, type: 'spring', bounce: 0.4 }}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setLanguage(lang.code)}
@@ -83,7 +83,7 @@ export default function LanguageModal() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 0.5 }}
             className="mt-8 text-center"
           >
             <span className="text-base font-medium text-gray-500">IsmartFinserv</span>
