@@ -147,8 +147,8 @@ export default function Footer() {
                   <Phone className="w-5 h-5 text-gray-700" />
                 </div>
                 <div>
-                  <p className="text-gray-700">+91 6360233799</p>
-                  <p className="text-gray-500 text-sm">+91 9880046990</p>
+                  <a href="tel:+916360233799" className="text-gray-700 hover:text-gray-900">+91 6360233799</a>
+                  <a href="tel:+919880046990" className="text-gray-500 text-sm hover:text-gray-700">+91 9880046990</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -156,7 +156,7 @@ export default function Footer() {
                   <Mail className="w-5 h-5 text-gray-700" />
                 </div>
                 <div>
-                  <p className="text-gray-700">ismartfinserv@gmail.com</p>
+                  <a href="mailto:ismartfinserv@gmail.com" className="text-gray-700 hover:text-gray-900">ismartfinserv@gmail.com</a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
