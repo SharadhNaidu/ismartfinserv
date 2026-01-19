@@ -48,19 +48,19 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <motion.a
             href="https://ismartfinserv.co.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative flex items-center gap-3 rounded-full px-4 py-2 border border-gray-900 text-gray-900 overflow-hidden shimmer"
+            className="relative flex items-center gap-2 sm:gap-3 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 border border-gray-900 text-gray-900 overflow-hidden shimmer"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-9 h-9 flex items-center justify-center bg-white rounded-full border border-gray-200">
-              <Image src="/logo.png" alt="IsmartFinserv logo" width={28} height={28} priority />
+            <div className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center bg-white rounded-full border border-gray-200">
+              <Image src="/logo.png" alt="IsmartFinserv logo" width={24} height={24} priority />
             </div>
-            <span className="text-lg font-semibold">IsmartFinserv</span>
+            <span className="text-sm sm:text-lg font-semibold">IsmartFinserv</span>
           </motion.a>
 
           {/* Desktop Navigation */}
