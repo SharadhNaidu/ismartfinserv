@@ -92,12 +92,15 @@ export default function Certificate() {
             {/* PDF Viewer */}
             <div className="p-6">
               <div className="flex justify-center">
-                <div className="w-full max-w-4xl aspect-[3/4] h-[720px] bg-white rounded-xl overflow-hidden border border-gray-200">
-                  <iframe
-                    src="https://drive.google.com/file/d/1rAjMHyGtgkojme4yrcVt80lTBZk1L8hi/preview"
-                    className="w-full h-full border-0"
-                    allow="autoplay"
-                  />
+                <div className="w-full max-w-4xl bg-white rounded-xl overflow-hidden border border-gray-200">
+                  <div className="relative w-full aspect-[3/4] min-h-[420px] sm:min-h-[520px] lg:min-h-[680px]">
+                    <iframe
+                      src="https://drive.google.com/file/d/1rAjMHyGtgkojme4yrcVt80lTBZk1L8hi/preview"
+                      className="absolute inset-0 w-full h-full border-0"
+                      allow="autoplay"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
               </div>
 

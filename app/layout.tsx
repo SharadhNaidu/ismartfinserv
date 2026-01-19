@@ -41,12 +41,21 @@ export const metadata: Metadata = {
       "Comprehensive financial services and investment solutions tailored to your needs in Mulbagal, Mulabagilu, Kolar.",
     type: "website",
     url: "https://ismartfinserv.co.in",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "IsmartFinserv",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "IsmartFinserv - Your Trusted Financial Partner",
     description:
       "Financial services in Mulbagal, Mulabagilu, Kolar. Loans, investments, insurance, tax planning.",
+    images: ["/logo.png"],
   },
 };
 

@@ -10,10 +10,10 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-28">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="text-gray-900">
+          <div className="text-gray-900 text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.05 }}
-              className="text-6xl sm:text-7xl lg:text-8xl xl:text-[5.5rem] 2xl:text-[6rem] font-semibold leading-[1.02] mb-6 max-w-none"
+              className="text-4xl sm:text-6xl lg:text-8xl xl:text-[5.5rem] 2xl:text-[6rem] font-semibold leading-[1.08] sm:leading-[1.02] mb-6 max-w-none"
             >
               {t('heroTitle')}
             </motion.h1>
@@ -41,7 +41,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.1 }}
-              className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-xl"
+              className="text-base sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
             >
               {t('heroSubtitle')}
             </motion.p>
@@ -50,13 +50,13 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.15 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <motion.a
                 href="#services"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gray-900 text-white rounded-lg font-semibold text-base shadow-sm hover:bg-gray-800 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gray-900 text-white rounded-lg font-semibold text-base shadow-sm hover:bg-gray-800 transition-colors w-full sm:w-auto"
               >
                 {t('exploreServices')}
                 <ArrowRight className="w-5 h-5" />
@@ -65,7 +65,7 @@ export default function Hero() {
                 href="#contact"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white border border-gray-300 text-gray-900 rounded-lg font-semibold text-base hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white border border-gray-300 text-gray-900 rounded-lg font-semibold text-base hover:bg-gray-50 transition-colors w-full sm:w-auto"
               >
                 {t('getInTouch')}
               </motion.a>
@@ -76,7 +76,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: 0.2 }}
-              className="mt-10 grid grid-cols-2 gap-6"
+              className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 max-w-md mx-auto lg:mx-0"
             >
               {[
                 { value: '12+', label: t('statServices') },
@@ -91,7 +91,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm max-w-xl mx-auto lg:mx-0 w-full">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-slate-50 border border-gray-200 flex items-center justify-center">
                 <ShieldCheck className="w-6 h-6 text-gray-700" />

@@ -39,10 +39,10 @@ export default function Contact() {
       icon: Phone,
       label: t('phoneLabel'),
       lines: [
-        <a key="phone1" href="tel:+916360233799" className="text-gray-700 hover:text-gray-900">
+        <a key="phone1" href="tel:+916360233799" className="block text-gray-700 hover:text-gray-900">
           +91 6360233799
         </a>,
-        <a key="phone2" href="tel:+919880046990" className="text-gray-700 hover:text-gray-900">
+        <a key="phone2" href="tel:+919880046990" className="block text-gray-700 hover:text-gray-900">
           +91 9880046990
         </a>,
       ],
@@ -52,10 +52,10 @@ export default function Contact() {
       icon: Mail,
       label: t('emailLabel'),
       lines: [
-        <a key="email" href="mailto:ismartfinserv@gmail.com" className="text-gray-700 hover:text-gray-900">
+        <a key="email" href="mailto:ismartfinserv@gmail.com" className="block text-gray-700 hover:text-gray-900">
           ismartfinserv@gmail.com
         </a>,
-        <a key="website" href="https://ismartfinserv.co.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
+        <a key="website" href="https://ismartfinserv.co.in" target="_blank" rel="noopener noreferrer" className="block text-gray-700 hover:text-gray-900">
           ismartfinserv.co.in
         </a>,
       ],
